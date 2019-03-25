@@ -12,8 +12,8 @@ from Entity.Models.Country import Country
 
 adana = Context()
 
-newValue = DenemeTable( name = "Erdem",lastname="Nalbur")
-secondValue = Country(countryname="MFK")
+newValue = DenemeTable( name = "ABdulllah",lastname="Külbstı")
+secondValue = Country(countryname="ameriga")
 
 adana.context.products.add(newValue)
 adana.context.products.add(secondValue)
