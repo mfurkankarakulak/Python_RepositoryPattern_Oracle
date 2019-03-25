@@ -12,14 +12,13 @@ base = declarative_base()
 
 class City(base):
     
-    __tablename__ = "City"
+    __tablename__ = "city"
     
     id = Column(Integer, primary_key=True)
-    cityName = Column(String)
-    countryId = Column(Integer)
+    cityname = Column(String)
+    countryid = Column(Integer)
     
-    def __init__(self,cityName,countryId):
-        self.cityName = cityName
-        self.countryId = countryId
-  
-    
+    def __init__(self,cityname,countryid):
+        self.cityname = cityname
+        self.countryid = countryid
+

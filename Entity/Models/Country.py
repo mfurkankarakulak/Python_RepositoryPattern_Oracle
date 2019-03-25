@@ -12,13 +12,13 @@ base = declarative_base()
 
 class Country(base):
     
-    __tablename__ = "Counrty"
+    __tablename__ = 'country'
     
     id = Column(Integer, primary_key=True)
-    countryName = Column(String)
+    countryname = Column(String)
     
-    def __init__(self,countryName):
-        self.countryName = countryName
+    def __init__(self,countryname):
+        self.countryname = countryname
         
   
     

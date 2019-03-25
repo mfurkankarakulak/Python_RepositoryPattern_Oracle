@@ -11,19 +11,19 @@ base  = declarative_base()
 
 class UserInfo(base):
     
-    __tablename__ = "userInfo"
+    __tablename__ = "userinfo"
     
     id = Column(Integer, primary_key=True)
-    userName = Column(String)
-    userSurName = Column(String)
-    userEmail = Column(String)
+    username = Column(String)
+    userlastname = Column(String)
+    useremail = Column(String)
     password = Column(String)
     
     
-    def __init__(self,userName,userSurName,userEmail,password):
-        self.userName = userName
-        self.userSurName = userSurName
-        self.userEmail = userEmail
+    def __init__(self,username,userlastname,useremail,password):
+        self.username = username
+        self.userlastname = userlastname
+        self.useremail = useremail
         self.password = password
         
     
